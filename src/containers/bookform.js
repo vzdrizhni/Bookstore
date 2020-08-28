@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 
 const BooksFrom = () => {
-
   const categories = [
     'Action',
     'Biography',
@@ -9,12 +8,12 @@ const BooksFrom = () => {
     'Horror',
     'Kids',
     'Learning',
-    'Sci-Fi'
+    'Sci-Fi',
   ];
 
   return (
     <form action="submit">
-      <input type="text"/>
+      <input type="text" />
       <select name="categories">
         {categories.map(category => (
           <option value={category} key={category}>
