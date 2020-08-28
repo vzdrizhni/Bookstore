@@ -4,7 +4,6 @@ import App from './components/App';
 import {Provider} from "react-redux";
 import {createStore} from "redux";
 import bookReducer from "./reducers/book";
-import * as actions from './actions/index'
 
 const initialState = {
   books: [

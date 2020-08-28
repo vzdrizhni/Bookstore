@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import * as actions from '../actions/index'
+import Book from "../components/Book"
 
 const BookList = ({books}) => (
     <table>
@@ -11,6 +11,9 @@ const BookList = ({books}) => (
           <th>Category</th>
         </tr>
       </thead>
+      <tbody>
+        {books.map(book => (<Book book={book}/>))}
+      </tbody>
     </table>
 )
 
