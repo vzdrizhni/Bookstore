@@ -1,19 +1,9 @@
 import React from 'react';
-import { createBook } from "../actions";
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../actions';
 
 class BooksFrom extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      id: this.randomizer(),
-      category: '',
-      title: ''
-    }
-  }
-
   categories = [
     'Action',
     'Biography',
@@ -21,22 +11,27 @@ class BooksFrom extends React.Component {
     'Horror',
     'Kids',
     'Learning',
-    'Sci-Fi'
+    'Sci-Fi',
   ];
 
-  randomizer() {
-    return Math.floor(Math.random() * 1000)
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      id: this.randomizer(),
+      category: '',
+      title: '',
+    };
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     const { createBook } = this.props;
-    console.log(this.props);
     createBook(this.state);
     this.setState({
       id: this.randomizer(),
@@ -45,10 +40,14 @@ class BooksFrom extends React.Component {
     });
   }
 
+  randomizer() { // eslint-disable-line class-methods-use-this
+    return Math.floor(Math.random() * 1000);
+  }
+
   render() {
     return (
       <form action="submit" onSubmit={this.handleSubmit}>
-        <input type="text" name="title" onChange={this.handleChange}/>
+        <input type="text" name="title" onChange={this.handleChange} />
         <select name="category" defaultValue={this.categories[0]} onChange={this.handleChange}>
           {this.categories.map(category => (
             <option value={category} key={category}>
@@ -56,16 +55,20 @@ class BooksFrom extends React.Component {
             </option>
           ))}
         </select>
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     );
   }
-};
+}
 
-const mapDispatchToProps = (dispatch) => ({
-  createBook: (book) => {
+const mapDispatchToProps = dispatch => ({
+  createBook: book => {
     dispatch(createBook(book));
   },
 });
+
+BooksFrom.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
 
 export default connect(null, mapDispatchToProps)(BooksFrom);
