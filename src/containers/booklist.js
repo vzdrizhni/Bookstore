@@ -21,11 +21,11 @@ const BookList = ({ books }) => (
 );
 
 const mapStateToProps = state => ({
-  books: state.books,
+  books: state,
 });
 
 BookList.propTypes = {
   books: PropTypes.instanceOf(Object).isRequired,
 };
 
-export default connect(mapStateToProps)(BookList); // eslint-disable-line max-len
+export default connect(mapStateToProps)(BookList);
