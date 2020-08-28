@@ -1,10 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import App from './components/App';
+import bookReducer from './reducers/book';
+
+const initialState = {
+  books: [
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'The Shining',
+      category: 'Horror',
+    },
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'Call of Cthulhu',
+      category: 'Horror',
+    },
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'For Whom the Bell Tolls',
+      category: 'Action',
+    },
+  ],
+};
+
+const store = createStore(bookReducer, initialState);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root'),
 );
