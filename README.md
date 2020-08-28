@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/vzdrizhni//Bookstore">
-    <img src="src/assets/microverse.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/images/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">ReactJs --> [Bookstore App]</h3>
@@ -54,8 +54,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   The Bookstore is an application, that emulates for a fictional company that requires help. The project has been split into multiple milestones, and each milestone has functional and technical requirements that you will need to implement.
-
-![screenshot-1](src/assets/Screenshot.PNG)
 
 ### Built With
 This project was built using these technologies.
