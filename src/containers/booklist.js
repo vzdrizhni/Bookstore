@@ -22,7 +22,7 @@ const BookList = ({ books, removeBook }) => {
           category={book.category}
           key={book.id}
           book={book}
-          removeBook={removeBook}
+          removeBook={handleBookRemove}
         />
       ))}
     </tbody>
