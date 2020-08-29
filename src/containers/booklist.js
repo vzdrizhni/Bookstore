@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
 
-const BookList = ({ books, removeBook }) => (
+const BookList = ({ books, removeBook }) => {
+   const handleBookRemove = (book) => removeBook(book)
   <table>
     <thead>
       <tr>
