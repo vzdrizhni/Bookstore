@@ -2,22 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({
-  id, title, category, removeBook, book,
-}) => (
-  <tr>
-    <td>{id}</td>
-    <td>{title}</td>
-    <td>{category}</td>
-    <td><button type="button" onClick={() => removeBook(book)}>Remove Book</button></td>
-  </tr>
-);
+  removeBook, book,
+}) => {
+  const { id, category, title } = book;
+  return (
+    <tr>
+      <td>{id}</td>
+      <td>{title}</td>
+      <td>{category}</td>
+      <td><button type="button" onClick={() => removeBook(book)}>Remove Book</button></td>
+    </tr>
+  );
+};
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
   removeBook: PropTypes.func.isRequired,
-  book: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default Book;
