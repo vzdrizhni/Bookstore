@@ -8,24 +8,24 @@ import bookReducer from './reducers/book';
 const initialState = {
   books: [
     {
-      id: Math.floor(Math.random() * 100),
+      id: Math.floor(Math.random() * 1000),
       title: 'The Shining',
       category: 'Horror',
     },
     {
-      id: Math.floor(Math.random() * 100),
+      id: Math.floor(Math.random() * 1000),
       title: 'Call of Cthulhu',
       category: 'Horror',
     },
     {
-      id: Math.floor(Math.random() * 100),
+      id: Math.floor(Math.random() * 1000),
       title: 'For Whom the Bell Tolls',
       category: 'Action',
     },
   ],
 };
 
-const store = createStore(bookReducer, initialState);
+const store = createStore(bookReducer, initialState.books);
 
 ReactDOM.render(
   <Provider store={store}>
