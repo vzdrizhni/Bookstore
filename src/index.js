@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App';
-import reducer from "./reducers/index";
+import reducer from './reducers/index';
 
 const initialState = {
   books: [
@@ -23,7 +23,7 @@ const initialState = {
       category: 'Action',
     },
   ],
-  filter: 'All'
+  filter: 'All',
 };
 
 const store = createStore(reducer, initialState);

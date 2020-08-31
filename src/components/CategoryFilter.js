@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const CategoryFilter = ({filterHandler}) => {
+const CategoryFilter = ({ filterHandler }) => {
   const categories = [
     'Action',
     'Biography',
@@ -8,7 +9,7 @@ const CategoryFilter = ({filterHandler}) => {
     'Horror',
     'Kids',
     'Learning',
-    'Sci-Fi'
+    'Sci-Fi',
   ];
 
   return (
@@ -22,7 +23,11 @@ const CategoryFilter = ({filterHandler}) => {
         </option>
       ))}
     </select>
-  )
-}
+  );
+};
+
+CategoryFilter.propTypes = {
+  filterHandler: PropTypes.func.isRequired,
+};
 
 export default CategoryFilter;
