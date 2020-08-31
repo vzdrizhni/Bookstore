@@ -106,10 +106,179 @@
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .table {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.book-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 0 28px 27px;
+  height: 100%;
+  width: 33%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.School-of {
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.title {
+  height: 29px;
+  font-family: 'Roboto Slab', serif;
+  ;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-three);
+  margin: 4px 0;
+}
+
+.Suzanne-Collins {
+  width: 107px;
+  height: 19px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Comments {
+  width: 173px;
+  height: 19px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Rectangle-3 {
+  display: flex;
+}
+
+.Oval-2 {
+  width: 68px;
+  height: 68px;
+  border-bottom: 10px solid #e8e8e8;
+  border-right: 10px solid #e8e8e8;
+  border-radius: 50%;
+  border-color: #e8e8e8 #379cf6 #379cf6 #e8e8e8;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.-Percent-Complete {
+  width: 68px;
+  height: 39px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.Completed {
+  width: 80px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.chapter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 166px 28px 27px;
+}
+
+.Current-Chapter {
+  height: 18px;
+  opacity: 0.5;
+  font-family: "RobotoSlab";
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.Current-Lesson {
+  height: 21px;
+  font-family: "RobotoSlab";
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Rectangle-2 {
+  width: 184px;
+  height: 33px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
 }
