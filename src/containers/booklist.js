@@ -32,7 +32,7 @@ const BookList = ({ books, removeBook }) => {
   );
 };
 
-const mapStateToProps = state => ({ books: state });
+const mapStateToProps = state => ({ books: state.books });
 
 const mapDispatchToProps = dispatch => ({
   removeBook: book => dispatch(removeBook(book)),
