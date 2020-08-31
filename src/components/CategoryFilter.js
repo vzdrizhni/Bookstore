@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CategoryFilter = () => {
+const CategoryFilter = ({filterHandler}) => {
   const categories = [
     'Action',
     'Biography',
@@ -12,7 +12,7 @@ const CategoryFilter = () => {
   ];
 
   return (
-    <select>
+    <select onChange={filterHandler}>
       <option>
         All
       </option>
