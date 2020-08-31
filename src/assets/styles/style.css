@@ -3,3 +3,82 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-bg {
+  height: 95px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 113px;
+}
+
+.booker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.Bookstore-CMS {
+  width: 240px;
+  height: 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.CATEGORIES {
+  height: 16px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  border: none;
+}
+
+.Oval {
+  width: 45px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mask {
+  width: 17px;
+  height: 17px;
+  color: #0290ff;
+}
