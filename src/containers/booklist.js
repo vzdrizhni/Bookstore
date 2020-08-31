@@ -6,6 +6,7 @@ import { removeBook } from '../actions';
 
 const BookList = ({ books, removeBook }) => {
   const handleBookRemove = book => removeBook(book);
+  console.log(books);
   return (
     <table>
       <thead>
