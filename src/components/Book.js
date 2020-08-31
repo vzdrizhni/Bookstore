@@ -6,12 +6,12 @@ const Book = ({
 }) => {
   const { id, category, title } = book;
   return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td><button type="button" onClick={() => removeBook(book)}>Remove Book</button></td>
-    </tr>
+    <div className='Lesson-Panel'>
+      <span>{id}</span>
+      <span>{title}</span>
+      <span>{category}</span>
+      <span><button type="button" onClick={() => removeBook(book)}>Remove Book</button></span>
+    </div>
   );
 };
 
