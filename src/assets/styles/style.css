@@ -20,11 +20,10 @@
 .panel-bg {
   width: 1400px;
   height: 95px;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
   padding: 0 95px;
 }
 
@@ -39,7 +38,7 @@
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif, fantasy;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -52,7 +51,7 @@
 .BOOKS {
   width: 59px;
   height: 16px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif, fantasy;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -65,7 +64,7 @@
 .CATEGORIES {
   height: 16px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif, fantasy;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -104,7 +103,7 @@
   height: 170px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
@@ -135,7 +134,7 @@
   width: 49px;
   height: 18px;
   opacity: 0.5;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif, fantasy;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -148,7 +147,6 @@
 .title {
   height: 29px;
   font-family: 'Roboto Slab', serif;
-  ;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -162,7 +160,7 @@
 .Suzanne-Collins {
   width: 107px;
   height: 19px;
-  font-family: RobotoSlab;
+  font-family: "RobotoSlab", serif, fantasy;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -175,7 +173,7 @@
 .Comments {
   width: 173px;
   height: 19px;
-  font-family: RobotoSlab;
+  font-family: "RobotoSlab", serif, fantasy;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -212,7 +210,7 @@
 .-Percent-Complete {
   width: 68px;
   height: 39px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', serif, fantasy;
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -226,7 +224,7 @@
   width: 80px;
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', serif, monospace;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -247,7 +245,7 @@
 .Current-Chapter {
   height: 18px;
   opacity: 0.5;
-  font-family: "RobotoSlab";
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -259,7 +257,7 @@
 
 .Current-Lesson {
   height: 21px;
-  font-family: "RobotoSlab";
+  font-family: "RobotoSlab", serif, fantasy;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -279,20 +277,20 @@
   font-weight: 300;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   border: none;
 }
 
 .add-title {
   height: 24px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif, fantasy;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
   margin-bottom: 25px;
 }
 
@@ -310,7 +308,7 @@ form {
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: -0.15px;
@@ -327,7 +325,7 @@ form {
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: -0.15px;
@@ -352,5 +350,5 @@ form {
   line-height: normal;
   letter-spacing: 1.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
