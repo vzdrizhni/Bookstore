@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import { createBook } from '../actions';
+import {createBook} from '../actions';
 
 class BooksFrom extends React.Component {
   categories = [
@@ -11,7 +11,7 @@ class BooksFrom extends React.Component {
     'Horror',
     'Kids',
     'Learning',
-    'Sci-Fi',
+    'Sci-Fi'
   ];
 
   constructor(props) {
@@ -20,23 +20,23 @@ class BooksFrom extends React.Component {
     this.state = {
       id: this.randomizer(),
       category: '',
-      title: '',
+      title: ''
     };
   }
 
   handleChange = e => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
+    const {name, value} = e.target;
+    this.setState({[name]: value});
   }
 
   handleSubmit = e => {
     e.preventDefault();
-    const { createBook } = this.props;
+    const {createBook} = this.props;
     createBook(this.state);
     this.setState({
       id: this.randomizer(),
       title: '',
-      category: '',
+      category: ''
     });
   }
 
@@ -46,17 +46,26 @@ class BooksFrom extends React.Component {
 
   render() {
     return (
-      <form action="submit" onSubmit={this.handleSubmit}>
-        <input type="text" name="title" onChange={this.handleChange} />
-        <select name="category" defaultValue={this.categories[0]} onChange={this.handleChange}>
-          {this.categories.map(category => (
-            <option value={category} key={category}>
-              {category}
-            </option>
-          ))}
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+      <div className='form-container'>
+        <h2 className='add-title'>ADD NEW BOOK</h2>
+        <form action="submit" onSubmit={this.handleSubmit}>
+          <input type="text" name="title" className='Lesson-Panel2' placeholder='Book title' onChange={this.handleChange}/>
+          <select
+            name="category"
+            className='Lesson-Panel3'
+            defaultValue={this.categories[0]}
+            onChange={this.handleChange}>
+            {this
+              .categories
+              .map(category => (
+                <option value={category} key={category}>
+                  {category}
+                </option>
+              ))}
+          </select>
+          <button className='Rectangle-4' type="submit"><span className='ADD-BOOK'>SUBMIT</span></button>
+        </form>
+      </div>
     );
   }
 }
@@ -64,11 +73,11 @@ class BooksFrom extends React.Component {
 const mapDispatchToProps = dispatch => ({
   createBook: book => {
     dispatch(createBook(book));
-  },
+  }
 });
 
 BooksFrom.propTypes = {
-  createBook: PropTypes.func.isRequired,
+  createBook: PropTypes.func.isRequired
 };
 
 export default connect(null, mapDispatchToProps)(BooksFrom);
