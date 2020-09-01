@@ -13,16 +13,28 @@ const CategoryFilter = ({ filterHandler }) => {
   ];
 
   return (
-    <select onChange={filterHandler}>
-      <option>
-        All
-      </option>
-      {categories.map(category => (
-        <option value={category} key={category}>
-          {category}
-        </option>
-      ))}
-    </select>
+    <div className="panel-bg">
+      <div className="booker">
+        <div className="Bookstore-CMS"><h4>Bookstore CMS</h4></div>
+        <div className="BOOKS">BOOKS</div>
+        <select className="CATEGORIES" onChange={filterHandler}>
+          <option>
+            CATEGORIES
+          </option>
+          {categories.map(category => (
+            <option value={category} key={category}>
+              {category}
+            </option>
+          ))}
+          <option>
+            All
+          </option>
+        </select>
+      </div>
+      <div className="Oval">
+        <i className="fas fa-user-alt Mask" />
+      </div>
+    </div>
   );
 };
 

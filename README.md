@@ -55,6 +55,8 @@
 ## About The Project
   The Bookstore is an application, that emulates for a fictional company that requires help. The project has been split into multiple milestones, and each milestone has functional and technical requirements that you will need to implement.
 
+![screenshot-1](src/assets/images/screenshot.png)
+
 ### Built With
 This project was built using these technologies.
 * HTML/CSS
@@ -106,7 +108,7 @@ To have this app on your pc, you need to:
 ## Live Demo & Deployment
 The project has been deployed with [Heroku Buildpack for create-react-app](https://github.com/mars/create-react-app-buildpack#user-content-requires)
 
-[Heroku Live Demo Link](https://Bookstore-react-js-vzdrizhni.herokuapp.com/) :point_left:
+[Heroku Live Demo Link](https://bookstore-vzdrizhni.herokuapp.com/) :point_left:
 
 <!-- CONTACT -->
 ## Contributors

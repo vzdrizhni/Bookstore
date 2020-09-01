@@ -3,3 +3,352 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#root {
+  width: 1600px;
+  background-color: #f5f6fa;
+}
+
+.App {
+  width: 1400px;
+  padding: 149px 0;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-bg {
+  width: 1400px;
+  height: 95px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 95px;
+}
+
+.booker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.Bookstore-CMS {
+  width: 240px;
+  height: 37px;
+  font-family: 'Montserrat', sans-serif, fantasy;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  font-family: 'Montserrat', sans-serif, fantasy;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.CATEGORIES {
+  height: 16px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif, fantasy;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  border: none;
+}
+
+.Oval {
+  width: 45px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mask {
+  width: 17px;
+  height: 17px;
+  color: #0290ff;
+}
+
+.panel-bg2 {
+  width: 1400px;
+  border-radius: 4px;
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+
+.Lesson-Panel {
+  width: 1200px;
+  height: 170px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 0 28px 27px;
+  height: 100%;
+  width: 33%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.School-of {
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif, fantasy;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.title {
+  height: 29px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-three);
+  margin: 4px 0;
+}
+
+.Suzanne-Collins {
+  width: 107px;
+  height: 19px;
+  font-family: "RobotoSlab", serif, fantasy;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Comments {
+  width: 173px;
+  height: 19px;
+  font-family: "RobotoSlab", serif, fantasy;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Rectangle-3 {
+  display: flex;
+}
+
+.Oval-2 {
+  width: 68px;
+  height: 68px;
+  border-bottom: 10px solid #e8e8e8;
+  border-right: 10px solid #e8e8e8;
+  border-radius: 50%;
+  border-color: #e8e8e8 #379cf6 #379cf6 #e8e8e8;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.-Percent-Complete {
+  width: 68px;
+  height: 39px;
+  font-family: 'Montserrat', serif, fantasy;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.Completed {
+  width: 80px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Montserrat', serif, monospace;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.chapter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 166px 28px 27px;
+}
+
+.Current-Chapter {
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-three);
+}
+
+.Current-Lesson {
+  height: 21px;
+  font-family: "RobotoSlab", serif, fantasy;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Rectangle-2 {
+  width: 184px;
+  height: 33px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.add-title {
+  height: 24px;
+  font-family: "Montserrat", serif, fantasy;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  padding-top: 25px;
+}
+
+.Lesson-Panel2 {
+  width: 800px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.Lesson-Panel2::placeholder {
+  padding-left: 15px;
+  color: #c4c4c4;
+}
+
+.Lesson-Panel3 {
+  width: 330px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.Rectangle-4 {
+  width: 184px;
+  height: 45px;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.ADD-BOOK {
+  width: 143px;
+  height: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #fff;
+}
