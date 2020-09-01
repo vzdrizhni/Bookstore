@@ -55,6 +55,8 @@
 ## About The Project
   The Bookstore is an application, that emulates for a fictional company that requires help. The project has been split into multiple milestones, and each milestone has functional and technical requirements that you will need to implement.
 
+![screenshot-1](src/assets/images/Screenshot.PNG)
+
 ### Built With
 This project was built using these technologies.
 * HTML/CSS
